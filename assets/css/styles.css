@@ -8,15 +8,15 @@
    Variables CSS (tema)
    ---------------------- */
 :root{
-  --bg: #0f172a;         /* azul grisáceo muy oscuro */
-  --bg-2: #0b1220;
-  --surface: #111827;
-  --text: #e5e7eb;       /* gris claro */
-  --muted: #9ca3af;
-  --primary: #22d3ee;    /* cian */
-  --primary-600:#06b6d4;
-  --gradient-start:#2563eb; /* azul */
-  --gradient-end:#06b6d4;   /* cian */
+  --bg: #2e1065;         /* morado oscuro */
+  --bg-2: #1e0645;
+  --surface: #3b0764;
+  --text: #f5f3ff;       /* lila muy claro */
+  --muted: #c4b5fd;
+  --primary: #a855f7;    /* morado medio */
+  --primary-600:#9333ea;
+  --gradient-start:#8b5cf6; /* morado */
+  --gradient-end:#d946ef;   /* rosa */
   --radius: 16px;
   --shadow: 0 10px 30px rgba(0,0,0,.25);
 }
@@ -30,8 +30,8 @@ body{
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
   color: var(--text);
-  background: radial-gradient(1200px 600px at 20% -10%, rgba(37,99,235,.25), transparent),
-              radial-gradient(1000px 500px at 120% 10%, rgba(34,211,238,.25), transparent),
+  background: radial-gradient(1200px 600px at 20% -10%, rgba(139,92,246,.25), transparent),
+              radial-gradient(1000px 500px at 120% 10%, rgba(217,70,239,.25), transparent),
               linear-gradient(180deg, var(--bg), var(--bg-2));
 }
 

@@ -144,13 +144,51 @@ $("#name")?.addEventListener("input", validateName);
 $("#email")?.addEventListener("input", validateEmail);
 $("#message")?.addEventListener("input", validateMessage);
 
+// Inicializar EmailJS
+(function() {
+  // Reemplaza con tu User ID de EmailJS
+  emailjs.init("tu_user_id_de_emailjs");
+})();
+
 form?.addEventListener("submit", (e) => {
   e.preventDefault();
   const ok = [validateName(), validateEmail(), validateMessage()].every(Boolean);
   if (ok){
-    form.reset();
-    formSuccess.hidden = false;
-    setTimeout(() => formSuccess.hidden = true, 3500);
+    // Obtener los datos del formulario
+    const name = $("#name").value;
+    const email = $("#email").value;
+    const message = $("#message").value;
+    
+    // Preparar los parámetros para EmailJS
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      message: message,
+      to_email: "angelinavalle777@gmail.com" // El correo donde quieres recibir los mensajes
+    };
+    
+    // Enviar el correo usando EmailJS
+    // Reemplaza con tu Service ID y Template ID de EmailJS
+    emailjs.send("tu_service_id", "tu_template_id", templateParams)
+      .then(function() {
+        // Mostrar mensaje de éxito
+        form.reset();
+        formSuccess.hidden = false;
+        formSuccess.textContent = "¡Gracias! Tu mensaje ha sido enviado correctamente.";
+        setTimeout(() => formSuccess.hidden = true, 3500);
+      }, function(error) {
+        // Mostrar mensaje de error
+        console.error("Error al enviar el mensaje:", error);
+        formSuccess.hidden = false;
+        formSuccess.textContent = "Hubo un error al enviar el mensaje. Por favor, intenta de nuevo.";
+        formSuccess.style.background = "rgba(239,68,68,.2)";
+        formSuccess.style.borderColor = "rgba(239,68,68,.5)";
+        setTimeout(() => {
+          formSuccess.hidden = true;
+          formSuccess.style.background = "";
+          formSuccess.style.borderColor = "";
+        }, 3500);
+      });
   }
 });
 

@@ -85,7 +85,7 @@
         <!-- Barra de progreso accesible -->
         <article class="skill">
           <header class="skill__header">
-            <h3>HTML5</h3>
+            <h3>HTML</h3>
             <span class="skill__value" data-value="90">90%</span>
           </header>
           <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Dominio de HTML5">
@@ -95,7 +95,7 @@
 
         <article class="skill">
           <header class="skill__header">
-            <h3>CSS3</h3>
+            <h3>Metodologías Ágiles (SCRUM)</h3>
             <span class="skill__value" data-value="85">85%</span>
           </header>
           <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Dominio de CSS3">
@@ -115,7 +115,7 @@
 
         <article class="skill">
           <header class="skill__header">
-            <h3>Responsive Design</h3>
+            <h3>Resolución de Problemas Lógicos</h3>
             <span class="skill__value" data-value="95">95%</span>
           </header>
           <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Dominio de diseño responsive">
@@ -131,34 +131,50 @@
     <section class="projects container section" id="proyectos" aria-labelledby="projects-heading">
       <h2 id="projects-heading" class="section__title">Mis Proyectos</h2>
 
-      <div class="projects__grid">
-        <article class="card" tabindex="0">
-          <img src="assets/img/project1.svg" alt="Proyecto 1 - Sitio Web Corporativo" loading="lazy" />
-          <div class="card__body">
-            <h3>Proyecto 1</h3>
-            <p>Un sitio corporativo moderno y responsive usando HTML, CSS y JavaScript vanilla.</p>
-            <a class="card__link" href="#" aria-label="Abrir detalles de Proyecto 1" data-card="1">Ver proyecto →</a>
-          </div>
-        </article>
-
-        <article class="card" tabindex="0">
-          <img src="assets/img/project2.svg" alt="Proyecto 2 - App Web Interactiva" loading="lazy" />
-          <div class="card__body">
-            <h3>Proyecto 2</h3>
-            <p>Aplicación web con funcionalidades interactivas y manejo de datos del usuario en el navegador.</p>
-            <a class="card__link" href="#" aria-label="Abrir detalles de Proyecto 2" data-card="2">Ver proyecto →</a>
-          </div>
-        </article>
-
-        <article class="card" tabindex="0">
-          <img src="assets/img/project3.svg" alt="Proyecto 3 - Landing page creativa" loading="lazy" />
-          <div class="card__body">
-            <h3>Proyecto 3</h3>
-            <p>Landing page con animaciones sutiles, efectos de desplazamiento y microinteracciones.</p>
-            <a class="card__link" href="#" aria-label="Abrir detalles de Proyecto 3" data-card="3">Ver proyecto →</a>
-          </div>
-        </article>
-      </div>
+      <div class="projects__grid"> 
+   <!-- Proyecto 1: VitaliZzz --> 
+   <article class="card" tabindex="0"> 
+     <img src="assets/img/imgvitalizzz.jpg" alt="VitaliZzz - Gestión de hábitos" loading="lazy" /> 
+     <div class="card__body"> 
+       <h3>VitaliZzz</h3> 
+       <p>Plataforma desarrollada en Django y SQLite para el registro y seguimiento de hábitos saludables en estudiantes. 
+        Incluye sistema de autenticación, registro de rutinas de sueño, agua y alimentación, generación de estadísticas
+         personalizadas con gráficos y recomendaciones automáticas para mejorar el bienestar académico.</p> 
+       <div class="card__actions"> 
+         <a class="card__link" href="#" aria-label="Abrir detalles de VitaliZzz" data-card="vitali">Ver proyecto →</a> 
+         <a class="card__link" href="assets/docs/Vitalizzz111.pdf" target="_blank" rel="noopener" download>Descargar PDF</a> 
+       </div> 
+     </div> 
+   </article> 
+ 
+   <!-- Proyecto 2: My Tiny Homework (scratch game) --> 
+   <article class="card" tabindex="0"> 
+     <img src="assets/img/imgmytinnyhomework.webp" alt="My Tiny Homework - Juego de preguntas matemáticas" loading="lazy" /> 
+     <div class="card__body"> 
+       <h3>My Tiny Homework</h3> 
+       <p>Juego educativo hecho desde cero en scratch para niños que plantea preguntas de matemáticas y registra puntuaciones.</p> 
+       <div class="card__actions"> 
+         <a class="card__link" href="#" aria-label="Abrir detalles de My Tiny Homework" data-card="tiny">Ver proyecto →</a> 
+         <a class="card__link" href="assets/docs/My tinny homework.pdf" target="_blank" rel="noopener" download>Descargar PDF</a> 
+       </div> 
+     </div> 
+   </article> 
+ 
+   <!-- Proyecto 3: Tic Tac Toe (HTML/CSS/JS) --> 
+   <article class="card" tabindex="0"> 
+     <img src="assets/img/imgtictactoe.png" alt="Tic Tac Toe - Juego clásico" loading="lazy" /> 
+     <div class="card__body"> 
+       <h3>Tic Tac Toe</h3> 
+       <p>Versión clásica de tres en línea creada con HTML, CSS y JavaScript. Permite jugar en modo dos jugadores o contra la CPU, 
+        con un diseño responsivo y accesible que resalta la experiencia de usuario. Incluye sistema de registro y autenticación, 
+        seguimiento de puntuaciones y estadísticas, y opción de jugar en modo offline.</p> 
+       <div class="card__actions"> 
+         <a class="card__link" href="#" aria-label="Abrir detalles de Tic Tac Toe" data-card="tictactoe">Ver proyecto →</a> 
+         <a class="card__link" href="assets/docs/Tic tac toe Presentation.pdf" target="_blank" rel="noopener" download>Descargar PDF</a> 
+       </div> 
+     </div> 
+   </article> 
+ </div>
     </section>
 
     <!-- Modal accesible para detalles de proyectos -->
@@ -182,8 +198,8 @@
 
       <div class="contact__grid">
         <address class="contact__info" aria-label="Información de contacto">
-          <p><strong>Email:</strong> <a href="mailto:angelina@example.com">angelina@example.com</a></p>
-          <p><strong>Teléfono:</strong> +593 99 999 9999</p>
+          <p><strong>Email:</strong> <a href="mailto:angelinavalle777@gmail.com">angelinavalle777@gmail.com</a></p>
+          <p><strong>Teléfono:</strong> +593 96 732 4653</p>
           <p><strong>Ubicación:</strong> Ecuador</p>
         </address>
 
@@ -207,7 +223,7 @@
           </div>
 
           <button class="btn btn--primary" type="submit">Enviar Mensaje</button>
-          <p class="form__success" id="formSuccess" hidden>¡Gracias! Tu mensaje ha sido enviado (simulado).</p>
+          <p class="form__success" id="formSuccess" hidden>¡Gracias! Tu mensaje ha sido enviado correctamente.</p>
         </form>
       </div>
     </section>
@@ -219,14 +235,17 @@
   <footer class="site-footer">
     <div class="container footer__inner">
       <ul class="social">
-        <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
-        <li><a href="#" aria-label="GitHub">GitHub</a></li>
-        <li><a href="#" aria-label="Twitter">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/angelina-valle-198316375/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a></li>
+        <li><a href="https://github.com/NinaLina21" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a></li>
+        <li><a href="https://www.instagram.com/angelina_valle_21/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a></li>
       </ul>
       <p>© <span id="year"></span> Portafolio de Angelina Valle. Todos los derechos reservados.</p>
     </div>
   </footer>
 
+  <!-- EmailJS para envío de correos -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
   <!-- JavaScript -->
   <script src="assets/js/main.js" defer></script>
 </body>
